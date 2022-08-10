@@ -1,0 +1,103 @@
+// 基本样式
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+// div容器, 正方块在盒子里跑，而盒子往后退进行复位，盒子被包在DIV里
+.container {
+    position: relative;
+    width: 100%;
+
+    // 盒子
+    .box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        animation: road 1s ease-in-out infinite;
+
+        // 正方块
+        .square {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #03e9f4;
+            transform-origin: bottom right;
+            box-shadow:
+                0 0 5px rgba(3, 233, 244, 1),
+                0 0 25px rgba(3, 233, 244, 1),
+                0 0 100px rgba(3, 233, 244, 1),
+                0 0 200px rgba(3, 233, 244, 0.5),
+                0 0 300px rgba(3, 233, 244, 0.5),
+            ;
+            animation: walk 1s ease-in-out infinite;
+        }
+    }
+}
+
+// 盒子的行走效果
+// transform-origin: bottom right;
+@keyframes walk {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    65% {
+        transform: rotate(85deg);
+    }
+
+    75% {
+        transform: rotate(90deg);
+    }
+
+    83% {
+        transform: rotate(88deg);
+    }
+
+    90%,
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+// 盒子向前走了200px,那么其父元素需要复位
+@keyframes road {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        // 回复的值为盒子的宽度
+        transform: translateX(-200px);
+    }
+}
+
+//加一条线
+.container:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    box-shadow: 0 0 10px #03e9f4 inset,
+        0 0 5px rgba(3, 233, 244, 1),
+        0 0 25px rgba(3, 233, 244, 1),
+        0 0 100px rgba(3, 233, 244, 1);
+}
