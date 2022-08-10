@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    height: 50%;
+    width: 40%;
+    overflow: hidden;
+    border-radius: 20px;
+
+    form {
+        height: 100%;
+        width: 100%;
+        border-top: 5px solid white;
+        background-color: white;
+        position: relative;
+
+        .showUser {
+            height: 20%;
+            width: 100%;
+            background-color: rgba(49, 49, 198, 0.804);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: inline-block;
+            }
+
+            img {
+                margin-left: 10px;
+                height: 50px;
+                width: 50px;
+                border-radius: 5px;
+            }
+        }
+
+        .loading {
+            height: 80%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+form::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: '';
+    width: 30%;
+    height: 5px;
+    background-color: rgba(21, 21, 218, 0.8);
+    animation: run 2s infinite linear;
+}
+
+@keyframes run {
+    0% {
+        transform: translateX(-110%);
+    }
+
+    100% {
+        transform: translateX(320%);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        width: 80%;
+    }
+}
