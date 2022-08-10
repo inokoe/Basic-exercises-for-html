@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  width: 80%;
+  height: 30px;
+  background-color: aliceblue;
+}
+.container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094);
+  animation: run 20s infinite linear;
+  background-size: 500%;
+}
+.container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094);
+  animation: run 20s infinite linear;
+  background-size: 500%;
+  filter: blur(30px);
+}
+@keyframes run {
+  0% {
+    background-position: 500% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
