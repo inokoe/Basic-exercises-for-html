@@ -22,7 +22,7 @@ body {
   width: 600px;
   animation: sonRun 15s linear infinite;
 }
-.son {
+.sun {
   position: absolute;
   top: 0;
   width: 200px;
