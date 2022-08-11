@@ -1,7 +1,7 @@
 # Basic-exercises-for-html
 Basic exercises for html, Practice makes perfect.
 
-## In this
+## Lists
 | Name                                                                                                                  | Time       |
 | --------------------------------------------------------------------------------------------------------------------- | ---------- |
 | [Sparkling squares](https://inokoe.github.io/Basic-exercises-for-html/Sparkling%20squares/)                           | 2022-08-10 |
