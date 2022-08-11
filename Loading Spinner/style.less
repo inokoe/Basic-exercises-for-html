@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    box-sizing: content-box;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 20px solid rgba(46, 36, 238, 0.825);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 20px solid gray;
+    border-top: 20px solid gray;
+    border-right: 20px solid gray;
+    animation: run 1s infinite linear;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.768);
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes run {
+    to {
+        transform: rotate(1turn);
+    }
+}
