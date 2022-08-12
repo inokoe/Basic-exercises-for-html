@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated-bg {
+    background-image: linear-gradient(to right,
+    #f6f7f8 0%,
+    #b3b4b8 30%,
+    #f6f7f8 20%,
+    #f6f7f8 100%);
+    background-size: 200% 100%;
+    animation: bgPos 2s linear infinite;
+}
+
+@keyframes bgPos {
+    0% {
+        background-position: 50% 0;
+    }
+
+    100% {
+        background-position: -150% 0;
+    }
+}
+
+.container {
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    height: auto;
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+
+    .img {
+        height: 200px;
+        // background-image: linear-gradient(to right, aqua, yellow);
+        .animated-bg()
+        // animation-fill-mode:forwards;
+    }
+
+    .info {
+        height: 150px;
+        padding: 20px;
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 10px;
+            letter-spacing: 0.1em;
+        }
+
+        .author {
+            display: flex;
+            margin-top: 20px;
+
+            .logo {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    animation: imgShake 2s infinite linear;
+                    border-radius: 5px;
+                }
+            }
+
+            .author-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@keyframes imgShake {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(4deg);
+    }
+    50%{
+        transform: rotate(-4deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
