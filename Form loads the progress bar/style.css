@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 html {
   height: 100%;
@@ -28,6 +29,16 @@ body {
   background-color: white;
   position: relative;
 }
+.container form::before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  content: '';
+  width: 30%;
+  height: 5px;
+  background-color: rgba(21, 21, 218, 0.8);
+  animation: run 2s infinite linear;
+}
 .container form .showUser {
   height: 20%;
   width: 100%;
@@ -44,7 +55,8 @@ body {
   margin-left: 10px;
   height: 50px;
   width: 50px;
-  border-radius: 5px;
+  max-height: 80%;
+  object-fit: contain;
 }
 .container form .loading {
   height: 80%;
@@ -52,16 +64,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-form::before {
-  position: absolute;
-  top: -5px;
-  left: 0;
-  content: '';
-  width: 30%;
-  height: 5px;
-  background-color: rgba(21, 21, 218, 0.8);
-  animation: run 2s infinite linear;
 }
 @keyframes run {
   0% {
