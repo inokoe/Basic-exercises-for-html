@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 60px;
+    height: 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid white;
+    background-color: #12B090;
+    box-shadow: 0 0 10px #12B090;
+
+    .circle {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 4px;
+        left: 5px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        box-shadow: 0 0 10px white;
+        transition: all .5s;
+    }
+
+    .text {
+        position: absolute;
+        right: 10px;
+        line-height: 25px;
+        color: white;
+        transition: all .5s;
+    }
+}
+
+// 使用 !important覆盖先前的属性，如此transition效果便会得到体现
+.text-on {
+    .container .text();
+    right: 30px !important;
+    color: #888 !important;
+}
+
+.circle-on {
+    .container .circle();
+    left: 40px !important;
+    background-color: #888 !important;
+    box-shadow: 0 0 10px #888 !important;
+}
