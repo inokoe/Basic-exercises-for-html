@@ -16,29 +16,35 @@ body {
   position: relative;
   overflow: hidden;
 }
+.standard {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 .box {
   position: relative;
   height: 500px;
   width: 600px;
   animation: sonRun 15s linear infinite;
 }
-.sun {
+.box .sun {
   position: absolute;
-  top: 0;
   width: 200px;
   height: 200px;
-  background-color: rgba(217, 140, 32, 0.9);
   border-radius: 50%;
+  top: 0;
+  background-color: rgba(217, 140, 32, 0.9);
   box-shadow: 0 0 5px rgba(217, 140, 32, 0.9), 0 0 25px rgba(217, 140, 32, 0.9), 0 0 50px rgba(217, 140, 32, 0.9), 0 0 75px rgba(217, 140, 32, 0.9), 0 0 100px rgba(217, 140, 32, 0.9);
 }
-.moon {
+.box .moon {
   position: absolute;
-  right: 0;
-  bottom: 0;
   width: 200px;
   height: 200px;
-  background-color: rgba(235, 219, 198, 0.805);
   border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(235, 219, 198, 0.805);
   box-shadow: 0 0 5px rgba(235, 219, 198, 0.805), 0 0 25px rgba(235, 219, 198, 0.805), 0 0 50px rgba(235, 219, 198, 0.805), 0 0 75px rgba(235, 219, 198, 0.805), 0 0 90px rgba(235, 219, 198, 0.805);
 }
 @keyframes sonRun {

@@ -11,3 +11,4 @@ Basic exercises for html, Practice makes perfect.
 | 5   | [Son and Moon](https://inokoe.github.io/Basic-exercises-for-html/Sun%20and%20Moon)                                    | 2022-08-11 |
 | 6   | [Easy WaterFlow](https://inokoe.github.io/Basic-exercises-for-html/Easy%20WaterFlow)                                  | 2022-08-12 |
 | 7   | [Card Loading](https://inokoe.github.io/Basic-exercises-for-html/Card%20Loading)                                      | 2022-08-12 |
+| 8   | [Switch Button](https://inokoe.github.io/Basic-exercises-for-html/Switch%20Button)                                    | 2022-08-13 |
