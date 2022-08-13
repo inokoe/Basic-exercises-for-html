@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 1px #ccc;
+  position: relative;
+}
+.container::before {
+  white-space: nowrap;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: aqua;
+  overflow: hidden;
+  -webkit-text-stroke: 0px #ccc;
+  border-right: 2px solid aqua;
+  animation: run 2s linear infinite alternate;
+}
+@keyframes run {
+  100% {
+    width: 100%;
+  }
+}
