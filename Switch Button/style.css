@@ -10,9 +10,10 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  background-color: grey;
+  background-color: #12B090;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
 .container {
   width: 60px;

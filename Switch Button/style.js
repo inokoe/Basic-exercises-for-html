@@ -11,11 +11,13 @@ function Switch(type) {
         circle.classList.add("circle-on");
         text.classList.add("text-on");
         text.innerText = "OFF";
+        document.body.style = "background-color:grey";
     } else {
         container.style = "";
         circle.classList.remove("circle-on");
         text.classList.remove("text-on");
         text.innerText = "ON";
+        document.body.style = "background-color:#12B090";
     }
     container.setAttribute("onclick", "Switch(" + !type + ")"); // 修改状态
 }
