@@ -6,7 +6,8 @@
 html {
   height: 100%;
 }
-body {
+body,
+.container {
   height: 100%;
   width: 100%;
   position: relative;
@@ -50,24 +51,17 @@ body {
     transform: scale(1.3);
   }
 }
-
 .moon {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    width: 200px;
-    height: 200px;
-    background-color: rgba(235, 219, 198, 0.805);
-    border-radius: 50%;
-    box-shadow:
-        0 0 5px rgba(235, 219, 198, 0.805),
-        0 0 25px rgba(235, 219, 198, 0.805),
-        0 0 50px rgba(235, 219, 198, 0.805),
-        0 0 75px rgba(235, 219, 198, 0.805),
-        0 0 90px rgba(235, 219, 198, 0.805);
-        animation: moon 3s infinite linear alternate;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(235, 219, 198, 0.805);
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(235, 219, 198, 0.805), 0 0 25px rgba(235, 219, 198, 0.805), 0 0 50px rgba(235, 219, 198, 0.805), 0 0 75px rgba(235, 219, 198, 0.805), 0 0 90px rgba(235, 219, 198, 0.805);
+  animation: moon 3s infinite linear alternate;
 }
-
 @keyframes moon {
   50% {
     top: 7%;
