@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.container {
+    img {
+        max-width: 100%;
+        // alternate属性使动画更加顺畅
+        animation: starBreathe 2s infinite linear alternate;
+    }
+}
+
+// invert使得图像的颜色发生反转
+@keyframes starBreathe {
+    25% {
+        filter: invert(25%);
+    }
+
+    50% {
+        filter: invert(50%);
+    }
+
+    75% {
+        filter: invert(75%);
+    }
+
+    100% {
+        filter: invert(100%);
+    }
+}
