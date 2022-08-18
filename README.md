@@ -13,4 +13,4 @@ Basic exercises for html, Practice makes perfect.
 | 7   | [Card Loading](https://inokoe.github.io/Basic-exercises-for-html/Card%20Loading)                                      | 2022-08-12 |
 | 8   | [Switch Button](https://inokoe.github.io/Basic-exercises-for-html/Switch%20Button)                                    | 2022-08-13 |
 | 9   | [Text filling loading](https://inokoe.github.io/Basic-exercises-for-html/Text%20filling%20loading)                    | 2022-08-14 |
-| 9   | [TwinklingStar](https://inokoe.github.io/Basic-exercises-for-html/TwinklingStar)                                      | 2022-08-19 |
+| 10  | [TwinklingStar](https://inokoe.github.io/Basic-exercises-for-html/TwinklingStar)                                      | 2022-08-19 |
