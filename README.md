@@ -1,6 +1,7 @@
 # Basic-exercises-for-html
 Basic exercises for html, Practice makes perfect.
-
+## Home
+https://inokoe.github.io/Basic-exercises-for-html/
 ## Lists
 | ID  | Name                                                                                                                  | Time       |
 | --- | --------------------------------------------------------------------------------------------------------------------- | ---------- |
@@ -14,3 +15,4 @@ Basic exercises for html, Practice makes perfect.
 | 8   | [Switch Button](https://inokoe.github.io/Basic-exercises-for-html/Switch%20Button)                                    | 2022-08-13 |
 | 9   | [Text filling loading](https://inokoe.github.io/Basic-exercises-for-html/Text%20filling%20loading)                    | 2022-08-14 |
 | 10  | [TwinklingStar](https://inokoe.github.io/Basic-exercises-for-html/TwinklingStar)                                      | 2022-08-19 |
+| 11  | [Dispersed squares](https://inokoe.github.io/Basic-exercises-for-html/Dispersed%20squares)                            | 2022-08-19 |
