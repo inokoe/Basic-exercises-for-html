@@ -1,5 +1,6 @@
 # Basic-exercises-for-html
-Basic exercises for html, Practice makes perfect.
+`骐骥一跃，不能十步；驽马十驾，功在不舍；锲而舍之，朽木不折；锲而不舍，金石可镂。`  
+`Basic exercises for html, Practice makes perfect.`
 ## Home
 https://inokoe.github.io/Basic-exercises-for-html/
 ## Lists
