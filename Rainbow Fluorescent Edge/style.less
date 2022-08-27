@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 200px;
+    width: 200px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    // 背景实际上就是伪元素的背景色，但是比container大上几个像素，然后
+    // 让其虚化，造成一种扩散效果
+    &::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        // 左右分别多出2PX
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        background: linear-gradient(45deg, #14ffe9, #ffeb3b, #ff00e0);
+        filter: blur(5px);
+    }
+}

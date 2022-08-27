@@ -16,3 +16,4 @@ https://inokoe.github.io/Basic-exercises-for-html/
 | 9   | [Text filling loading](https://inokoe.github.io/Basic-exercises-for-html/Text%20filling%20loading)                    | 2022-08-14 |
 | 10  | [TwinklingStar](https://inokoe.github.io/Basic-exercises-for-html/TwinklingStar)                                      | 2022-08-19 |
 | 11  | [Dispersed squares](https://inokoe.github.io/Basic-exercises-for-html/Dispersed%20squares)                            | 2022-08-19 |
+| 12  | [Rainbow Fluorescent Edge](https://inokoe.github.io/Basic-exercises-for-html/Rainbow%20Fluorescent%20Edge)            | 2022-08-27 |
