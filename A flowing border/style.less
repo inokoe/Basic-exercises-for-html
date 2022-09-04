@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+
+    >.water {
+        height: 200px;
+        width: 150px;
+        background-color: black;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 10px;
+
+        >h2 {
+            color: white;
+            position: relative;
+            z-index: 99;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 250px;
+            background: linear-gradient(#00ccff, #d400d4);
+            animation: circle 2s linear infinite;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            // 等同于top: 4px;right: 4px;bottom: 4px;left: 4px;
+            inset: 4px;
+            background: #0e1538;
+            border-radius: 10px;
+        }
+    }
+}
+
+@keyframes circle {
+    100% {
+        transform: rotate(1turn);
+    }
+}

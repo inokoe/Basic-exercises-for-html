@@ -21,6 +21,7 @@ body {
     font-size: 50px;
 
     span {
+        // 为了能让SPAN动画生效，需要设置
         display: inline-block;
         animation: run 6s ease infinite;
     }
@@ -51,6 +52,8 @@ body {
 }
 
 @keyframes run {
+
+    // 注意一个时间的刻度,调整让动画变成我们想要的样子
     0% {
         transform: scale(1);
     }
