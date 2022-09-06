@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 250px;
+  background-color: black;
+  position: relative;
+  color: white;
+}
+.container::before {
+  content: '';
+  position: absolute;
+  background-color: grey;
+  inset: -2px;
+  z-index: -1;
+  filter: blur(20px);
+  background: linear-gradient(45deg, #5be26b, #d75656, #ccc015);
+}
