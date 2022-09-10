@@ -22,3 +22,4 @@ https://inokoe.github.io/Basic-exercises-for-html/
 | 14  | [The letters are gradually enlarged](https://inokoe.github.io/Basic-exercises-for-html/The%20letters%20are%20gradually%20enlarged/) | 2022-09-03 |
 | 15  | [A flowing border](https://inokoe.github.io/Basic-exercises-for-html/A%20flowing%20border/)                                         | 2022-09-04 |
 | 16  | [Color blur frame](https://inokoe.github.io/Basic-exercises-for-html/Color%20blur%20frame/)                                         | 2022-09-05 |
+| 17  | [Color blur frame](https://inokoe.github.io/Basic-exercises-for-html/Loading%20of%20squares%20and%20points/)                        | 2022-09-10 |
