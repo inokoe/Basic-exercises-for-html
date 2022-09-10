@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container span {
+  display: inline-block;
+  border-radius: 15px;
+  margin: 5px;
+  animation: span_run 3s linear infinite;
+}
+.container span:nth-of-type(1) {
+  height: 90px;
+  width: 90px;
+  background-color: orange;
+  animation-delay: 0.3s;
+}
+.container span:nth-of-type(2) {
+  height: 90px;
+  width: 90px;
+  background-color: orangered;
+  animation-delay: 0.6s;
+}
+.container span:nth-of-type(3) {
+  height: 90px;
+  width: 90px;
+  background-color: burlywood;
+  animation-delay: 0.9s;
+}
+.container span:nth-of-type(4) {
+  height: 90px;
+  width: 90px;
+  background-color: rgba(255, 166, 0, 0.815);
+}
+.dot {
+  margin-top: 10px;
+  height: 20px;
+  width: 180px;
+  overflow: hidden;
+}
+.dot span {
+  display: inline-block;
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: dot_run 3s ease infinite;
+}
+.dot span:nth-of-type(1) {
+  animation-delay: 0.6s;
+}
+.dot span:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+@keyframes span_run {
+  10% {
+    transform: scale(1.1);
+  }
+  90% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes dot_run {
+  0% {
+    left: -50px;
+  }
+  10%,
+  30% {
+    left: 0px;
+  }
+  100% {
+    left: 200px;
+  }
+}
