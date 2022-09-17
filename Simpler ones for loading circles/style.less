@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    // background-color: #fff;
+    border-top: 8px solid #fff;
+    border-left: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    border-right: 8px solid transparent;
+    animation: run 2s ease infinite;
+}
+
+@keyframes run {
+    to {
+        transform: rotate(1turn);
+    }
+}
